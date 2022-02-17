@@ -1,0 +1,11 @@
+<p>listado works!</p>
+
+<button type="button" class="btn btn-danger" (click)="eliminar('Luis')">Eliminar nombre</button>
+
+<ul>
+    <li *ngFor="let persona of personas; let i = index">
+        {{ i+' - '+persona }}
+    </li>
+</ul>
+
+<h5 *ngIf="persona_eliminada.length > 0">Se eliminó a {{ persona_eliminada }}</h5>

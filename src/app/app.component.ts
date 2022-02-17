@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular_test';
+  public title: string = 'angular_test';
+  public numero: number = 0;
+  public base: number = 5;
+
+  public contador(value: number): void {
+    this.numero+=value;
+  }
 }
